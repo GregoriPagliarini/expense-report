@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Auth.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace Auth.Model.Context
 {
@@ -7,6 +8,5 @@ namespace Auth.Model.Context
         public MySQLContext() { }
         public MySQLContext(DbContextOptions<MySQLContext> options) : base(options) { }
 
-        public DbSet<User> Users { get; set; }
     }
 }
